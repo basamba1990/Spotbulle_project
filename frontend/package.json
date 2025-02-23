@@ -6,18 +6,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-<<<<<<< HEAD
-    "test": "react-scripts test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject"
-  },
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "5.0.1"
-  },
-  "proxy": "http://localhost:5000"
-=======
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -29,5 +19,4 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^3.3.0"
   }
->>>>>>> 40016ec21023be5d865dea9f87c330d8716bfcc7
 }
