@@ -3,4 +3,3 @@ flask-cors
 whisper
 scikit-learn
 joblib
-
