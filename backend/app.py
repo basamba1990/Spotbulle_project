@@ -22,7 +22,9 @@ except ImportError as e:
 
 # Initialisation de l'application Flask
 app = Flask(__name__)
-CORS(app)
+
+# Configuration de CORS
+CORS(app, resources={r"/upload": {"origins": "http://localhost:3000"}})
 
 # Définition du dossier de stockage des fichiers uploadés
 UPLOAD_FOLDER = "uploads"
