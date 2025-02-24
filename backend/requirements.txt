@@ -1,6 +1,6 @@
 flask
 flask-cors
-whisper
+openai-whisper
 scikit-learn
 joblib
 gunicorn
