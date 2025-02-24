@@ -19,13 +19,17 @@ def upload_file():
     file_path = os.path.join(UPLOAD_FOLDER, file.filename)
     file.save(file_path)
 
-    # Transcription
-    transcription = transcribe_video(file_path)
+    try:
+        # Transcription
+        transcription = transcribe_video(file_path)
 
-    # Classification
-    category = classify_pitch(transcription)
+        # Classification
+        category = classify_pitch(transcription)
 
-    return jsonify({"transcription": transcription, "category": category})
+        return jsonify({"transcription": transcription, "category": category})
+    
+    except Exception as e:
+        return jsonify({"error": f"Erreur lors du traitement : {str(e)}"}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)
