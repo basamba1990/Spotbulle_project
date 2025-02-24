@@ -1,6 +1,11 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
+import sys
+
+# Ajout du chemin du dossier backend pour éviter les problèmes d'importation
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
 from models.transcriber import transcribe_video
 from models.classifier import classify_pitch
 
