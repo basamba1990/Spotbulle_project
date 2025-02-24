@@ -4,3 +4,4 @@ whisper
 scikit-learn
 joblib
 gunicorn
+torch
